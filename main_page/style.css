@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    background-color: #19191b;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #202429;
+}
+
+.title-fav-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-logout-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    color: aliceblue;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.title:hover {
+    transform: scale(1.1)
+}
+
+.favorites {
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 30px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    background-color: black;
+}
+
+.favorites:hover {
+    background-color: black;
+    border-radius: 5px
+}
+
+.search-input {
+    margin-top: 16px;
+    padding-left: 10px;
+    height: 26px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.logout-button {
+    width: 111px;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 44px;
+    border: 0px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-button:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.countries-wrapper {
+    margin: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.country-container {
+    margin-top: 80px;
+    margin-right: 60px;
+    width: 340px;
+    height: 275px;
+    cursor: pointer;
+}
+
+.text-decoration {
+    margin-top: 240px;
+    color: white;
+    font-size: 25px;
+}
+
+.remove-btn-decoration {
+    width: 37px;
+    height: 44px;
+    background-color: #82747452;
+    border: 0px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 266px
+}
+
+.fav-btn-decoration {
+    width: 37px;
+    height: 44px;
+    background-color: #82747452;
+    border: 0px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.loader {
+    font-size: 25px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.warning {
+    color: red;
+    visibility: hidden;
+    margin-top: 3px;
+}
+
+/* nv logout i btn i harcere lucel */

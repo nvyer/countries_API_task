@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/atlas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.transparent {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    border-radius: 5%;
+    width: 431px;
+    height: 299px;
+    background-color: #103e4ae6;
+    display: flex;
+    flex-direction: column;
+}
+
+.form p {
+    color: #a54345;
+    margin-left: 27px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.higher {
+    margin-top: 20px;
+}
+
+.input {
+    margin-left: 28px;
+    width: 363px;
+    height: 37px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#login-button {
+    width: 375px;
+    height: 44px;
+    margin-left: 28px;
+    margin-top: 30px;
+    border-radius: 7px;
+    border: 0px;
+    background-color: #657d32;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allowed-login {
+    background-color: #7aa51e;
+}
+
+.hidden {
+    display: none;
+}
+
+.warning {
+    border-radius: 3px;
+    border: 1px solid red;
+    background-color: #7b252570;
+    color: white;
+    width: 373px;
+    margin-left: 28px;
+    text-align: end;
+    letter-spacing: 0.5px;
+    font-family: cursive;
+    font-size: 14px;
+}
