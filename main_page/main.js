@@ -157,7 +157,7 @@ CountriesSign.addEventListener('click', () => {
 })
 
 logOutBtn.addEventListener('click', () => {
-    logOutBtn.href = '../login_page/index.html';
+    logOutBtn.href = '../index.html';
     user.username = null;
     user.password = null;
     localStorage.setItem('currentUser', JSON.stringify(user));

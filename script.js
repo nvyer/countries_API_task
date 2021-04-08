@@ -34,7 +34,7 @@ loginBtn.addEventListener('click', () => {
             user.username = username.value;
             user.password = password.value;
             localStorage.setItem('currentUser',JSON.stringify(user))
-            loginBtn.href = '../main_page/main.html';
+            loginBtn.href = './main_page/main.html';
         }
     }
 });
