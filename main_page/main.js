@@ -1,5 +1,6 @@
 let user = JSON.parse(localStorage.getItem('currentUser'));
 
+console.log(user)
 const container = document.querySelector('.countries-wrapper');
 const searchInput = document.querySelector('.search-input');
 const loader = document.querySelector('.loader');
@@ -32,7 +33,8 @@ if (searchInput.value === '') {
                 favBtn.classList.add('fav-btn-decoration');
 
                 favBtn.addEventListener('click', () => {
-                    user.favorites.push(country)
+                    user.favorites.push(country);
+                    user.favorites = [...new Set(user.favorites)]
                     localStorage.setItem('currentUser', JSON.stringify(user));
                 });
 
@@ -83,7 +85,6 @@ favorites.addEventListener('click', () => {
     user.favorites.forEach((country) => {
         const countryCountainer = document.createElement('div');
         const nameP = document.createElement('p');
-        const favBtn = document.createElement('button');
         const removeBtn = document.createElement('button');
 
         loader.classList.add('hidden');
@@ -98,20 +99,16 @@ favorites.addEventListener('click', () => {
         removeBtn.textContent = '-';
         removeBtn.classList.add('remove-btn-decoration');
 
-        favBtn.textContent = '+';
-        favBtn.classList.add('fav-btn-decoration');
-
-        removeBtn.addEventListener('click', (event) => {
+        removeBtn.addEventListener('click', () => {
             let index = user.favorites.indexOf(country);
             if (index > -1) {
-                user.favorites.splice(index, 1)
+                user.favorites.splice(index, 1);
             }
             localStorage.setItem('currentUser', JSON.stringify(user));
             countryCountainer.remove();
         });
 
         container.append(countryCountainer);
-        countryCountainer.append(favBtn);
         countryCountainer.append(removeBtn);
         countryCountainer.append(nameP);
     })
@@ -143,9 +140,12 @@ CountriesSign.addEventListener('click', () => {
                     favBtn.classList.add('fav-btn-decoration');
 
                     favBtn.addEventListener('click', () => {
-                        user.favorites = [...user.favorites, country];
+                        user.favorites.push(country);
+                        user.favorites = [...new Set(user.favorites)]
+
                         localStorage.setItem('currentUser', JSON.stringify(user));
                     });
+                    countryCountainer.innerHTML = ''
 
                     container.append(countryCountainer);
                     countryCountainer.append(favBtn);
