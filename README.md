@@ -12,3 +12,5 @@ Website contains login (with some validation) and keeps the data in local storag
 
 
 Website was deployed to GitHub Pages.
+
+[Click Here](https://nvyer.github.io/countries_API_task/) to visit.
